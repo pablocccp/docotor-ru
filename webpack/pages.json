@@ -1,0 +1,8 @@
+[
+  { 
+    "name": "home",
+    "entry": {
+      "home": "./app/page/home/view.js"
+    } 
+   }
+]

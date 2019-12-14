@@ -1,0 +1,97 @@
+@import '../../components/icons/style.css';
+
+.services {
+  &-page {
+    display: flex;
+    text-align: center;
+    padding-top: 10%;
+    width: 872px;
+    margin: 0 auto;
+    justify-content: space-between;
+    cursor: pointer;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &-box {
+    width: 424px;
+    height: 358px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+
+    &-title {
+      font-size: 20px;
+      color: #000000;
+      margin-top: 9px;
+      margin-bottom: 40px;
+    }
+
+    &-description {
+      color: rgba(112, 112, 112, 1);
+      font-size: 14px;
+      margin: 0 31px;
+    }
+
+    .icon-supervition {
+    width: 96px;
+    height: 96px;
+    margin-top: 32px;
+    }
+
+    .icon-assignments {
+    width: 96px;
+    height: 96px;
+    margin-top: 32px;
+    }
+
+    .icon-user {
+      width: 96px;
+      height: 96px;
+      margin-top: 45px;
+      border-radius: 50%;
+    }
+
+    .icon-devices {
+      width: 96px;
+      height: 96px;
+      margin-top: 45px;
+    }
+
+    .data-control {
+      margin-top: 31px;
+      margin-bottom: 40px;
+      border-top: 1px solid rgba(112, 112, 112, 1);
+      margin-left: 31px;
+      margin-right: 31px;
+      padding-top:30px;
+
+      &-item {
+        display: inline-block;
+
+        .icon-fa {
+          vertical-align: sub;
+        }
+
+        .point {
+          vertical-align: bottom;
+        }
+
+        span {
+          font-size: 20px;
+          color: rgba(18, 177, 238, 1);
+          margin-left: 14px;
+          margin-right: 30px;
+        }
+
+        &:last-child {
+          span {
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+  }
+}
