@@ -1,103 +1,66 @@
 import React from 'react';
 
-import Tooltips from '../tooltips';
-import Chevron from '../chevron';
-import Modal from '../modal';
-
-import ChangePassword from './components/change-password';
-
 class header extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      userOpen: false,
-      changePassword: props.data.hasToChangePassword,
-    };
-
-    this.listMenu = [
-      { description: `Versión: ${props.data.version}` },
-    ]; 
-
-    this.listMenu.push({ description: `Clave ${props.data.keyYesterday}` });
-    this.listMenu.push({ description: `Clave ${props.data.keyToday}` });
-    this.listMenu.push({ description: `Rol: ${props.data.role}` });
-    if (props.data  && props.data.availableOperations) {
-      props.data.availableOperations.forEach((el,k) => {
-        if(k == 0) {
-          this.listMenu.push({ description: `Operación:` });
-        } 
-          this.listMenu.push({ description: `<span style="margin-left: 73px;">${el}</span>` });
-      
-      });
-    }
-
-
-    this.openUserMenu = this.openUserMenu.bind(this);
-    this.changePassword = this.changePassword.bind(this);
-    this.coloseModal = this.coloseModal.bind(this);
-  }
-
-  openUserMenu(){
-    this.setState({
-      userOpen: !this.state.userOpen,
-    });
-  }
-
-  changePassword(){
-    this.setState({
-      changePassword: true,
-    });
-  }
-
-  coloseModal(){
-    this.setState({
-      changePassword: false,
-    });
   }
   
   render () {
-    const { user } = this.props.data;
     return (
       <React.Fragment>
-        <header>
-          <div className="header_left">
-            <div className="header_menu">
-              <span className="title">ACTIVA</span>
-              <span className="sub-title">{this.props.subTitle || ''}</span>
+        <header data-test-id="vue-header" className="vue-header vue-header--show">
+          <div className="wrap"> 
+            <div data-test-id="vue-header__left" className="vue-header__left">
+              <div>
+                <a href="/" data-test-id="header_logo" className="vue-header__logo">
+                  <img src="https://docdoc.ru/static/new-doc-doc/images/logo.png" alt="" className="vue-header__logo-img" />
+                </a>
+              </div>
+              <div className="vue-header__count">
+                <span className="vue-header__users">2 360 015</span> пациентов
+              </div>
+            </div>
+            <form action="/site/changeCity" method="get" name="cityselector">
+              <input name="cityId" type="hidden" />
+            </form> 
+            <div data-test-id="vue-header__right" className="vue-header__right">
+              <div>
+                <div className="caption">
+                  Нужна помощь? <strong>Звоните!</strong>
+                </div>
+                <div className="title-small vue-header__phone header_contact_phone">
+                  8 (499) 116-81-78
+                </div>
+                <div data-test-id="vue-header__selects" className="vue-header__selects">
+                  <div className="vue-header__city city-select city-right">
+                    <div className="select-box" title="Выберите город">
+                    <button data-test-id="city_select_button" data-ga-label="" data-ga-action="" data-ga-value="" className="button color--white vue-button">
+                      <span className="select-box__title">Москва</span>
+                      <i className="icon icon__angle-bkt--small-grey-down"></i>
+                    </button>
+                    </div>
+                  </div> 
+                  <div data-test-id="vue-header__auth" className="vue-header__auth auth-select">
+                    <div className="select-box --show-list-on-hover">
+                      <button data-ga-label="" data-ga-action="" data-ga-value="" className="button color--white vue-button">
+                        <span className="select-box__title">Личный кабинет</span>
+                        <i className="icon icon__angle-bkt--small-grey-down"></i>
+                      </button>
+                      <div className="select-box__options">
+                        <div className="subhead select-box__options-item">
+                          Вход
+                        </div>
+                        <div className="subhead select-box__options-item">
+                          Регистрация
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div className="header_right">
-            <div className="header_user">
-              <a href="/" className="menu">
-                <img src={`./images/menu.svg`} className={`icon-fa icon-menu`}/>
-              </a>
-              <img src={`./images/user.svg`} className={`icon-fa icon-user`}/>
-              <span onClick={this.openUserMenu} >
-                {user || 'Usuario'} <Chevron  up={this.state.userOpen}/>
-                <Tooltips open={this.state.userOpen} items={this.listMenu || []} action={(e) => {}}>
-                  <p>
-                    <a href="/api/logout" >
-                      <img src={`./images/logout.png`} className={`icon-fa icon-logout`}/>
-                      Cerrar Sessión
-                    </a>
-                  </p>
-                  <p >
-                    <a href="#" onClick={this.changePassword}>
-                      <img src={`./images/change-password.png`} className={`icon-fa icon-ch-password`}/>
-                      Cambio contraseña
-                    </a>
-                  </p>
-                </Tooltips>
-              </span>
-            </div>
-          </div>
-
         </header>
-        <Modal close={!this.state.changePassword} actionClose={this.coloseModal}>
-          { this.state.changePassword && <ChangePassword /> }
-        </Modal>
-    
       </React.Fragment>
     );
   }

@@ -1,3 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
+.icon-fa{
+    width: 24px ;
+    height:24px;
+  }
+.icon-menu {
+    width: 16px ;
+    height:16px;
+  }
+.icon-user {
+    width: 16px ;
+    height:16px;
+  }
+.icon-important {
+   fill: #707070;
+  }
+.point {
+  vertical-align: super;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-block
+}
+.point.red {
+    background: red;
+  }
+.point.yellow {
+    background: yellow;
+  }
 .body--fixed {
   overflow: hidden;
 }
@@ -28,9 +57,9 @@
   border-radius: 8px;
   box-shadow: 0 12px 32px rgba(38, 54, 75, .5);
 }
-}.base-modal__title {
+}
+.base-modal__title {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1;
   flex: 1 1;
   font-size: 1.125rem;
   line-height: 1.5rem;
@@ -40,7 +69,8 @@
   .base-modal__title {
   font-size: 1.25rem;
 }
-}.base-modal__item {
+}
+.base-modal__item {
   padding-right: 24px;
   padding-left: 24px;
 }
@@ -50,19 +80,15 @@
 .base-modal__actions, .base-modal__header {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
 }
 .base-modal__header {
   padding-top: 24px;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
   justify-content: space-between;
   -webkit-box-align: start;
-  -webkit-align-items: flex-start;
   align-items: flex-start;
 }
 .base-modal__content {
@@ -72,9 +98,9 @@
   .base-modal__content {
   margin-top: 32px!important;
 }
-}.base-modal__actions {
+}
+.base-modal__actions {
   -webkit-box-align: center;
-  -webkit-align-items: center;
   align-items: center;
 }
 .base-modal__footer {
@@ -89,15 +115,12 @@
   margin-left: 24px;
   padding: 0;
   display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   width: 24px;
   height: 24px;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   align-items: center;
   color: #848d9f;
   background: #eef2f8;
@@ -128,16 +151,13 @@
 }
 .base-modal--align-center .base-modal__header {
   -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
   justify-content: flex-end;
 }
 .base-modal--align-center .base-modal__actions {
-  -webkit-justify-content: space-around;
   justify-content: space-around;
 }
 .base-modal--align-left .base-modal__actions {
   -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
   justify-content: flex-end;
 }
 .base-modal--align-center .base-modal__footer {
@@ -182,13 +202,10 @@
 .auth__form {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-flow: column nowrap;
   flex-flow: column nowrap;
   display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   align-items: center;
 }
 .auth__input {
@@ -232,7 +249,6 @@
 }
 .auth__action {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
   flex: 0 0 auto;
 }
 .auth__button {
@@ -245,16 +261,12 @@
 .auth__features {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-flow: column nowrap;
   flex-flow: column nowrap;
   display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   align-items: center;
   font-size: .75rem;
 }
@@ -274,7 +286,6 @@
 }
 .auth .footer-actions {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 0 100%;
   flex: 1 0 100%;
   text-align: center;
 }
@@ -298,13 +309,10 @@
 }
 .vue-header__selects {
   display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
   justify-content: flex-end;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   align-items: center;
 }
 .vue-header__phone {
@@ -339,7 +347,6 @@
 .vue-header__city {
   margin-left: 18px;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
   flex: 0 0 auto;
 }
 .vue-header__city.city-select {
@@ -350,7 +357,6 @@
 .vue-header__city .button.color--white {
   padding: 0 8px;
   display: -webkit-inline-box;
-  display: -webkit-inline-flex;
   display: inline-flex;
   height: 24px;
   font-size: .875rem;
@@ -369,7 +375,7 @@
   margin-bottom: 0;
   padding: 2px 16px 2px 34px;
 }
-.vue-header__city .select-box__options-item.--active {
+.vue-header__city .select-box__options-item.\--active {
   padding-left: 8px;
 }
 .vue-header__city .select-box__title {
@@ -380,13 +386,10 @@
   position: relative;
   margin-left: auto;
   display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
   flex: 0 0 auto;
   -webkit-box-align: end;
-  -webkit-align-items: flex-end;
   align-items: flex-end;
   line-height: normal;
   text-align: right;
@@ -445,15 +448,14 @@
   .vue-header__right {
   min-height: 55px;
 }
-}.vue-header .wrap {
+}
+.vue-header .wrap {
   margin: 0 auto;
   display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   width: 1000px;
   height: 100%;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   align-items: center;
 }
 .body_main .vue-header {
@@ -488,7 +490,8 @@
 .vue-header .header__burger {
   display: block;
 }
-}.title-large {
+}
+.title-large {
   margin-bottom: 18px;
   font-size: 2.375rem;
   line-height: 1.26;
@@ -569,7 +572,7 @@
 .text-input:focus::placeholder {
   opacity: .3;
 }
-.text-input:not(.--empty) {
+.text-input:not(.\--empty) {
   background-color: #fff;
   border-color: #ced1db;
 }
@@ -604,21 +607,23 @@
   opacity: .7;
   color: #868d9d;
 }
-.text-input.--color-grey {
+.text-input.\--color-grey {
   background-color: #eef2f8;
   border-color: #eef2f8;
 }
-.text-input.--color-grey:hover {
+.text-input.\--color-grey:hover {
   background-color: #d9e0ea;
 }
-.text-input.--color-grey:focus {
+.text-input.\--color-grey:focus {
   background-color: #fff;
   border-color: #eef2f8;
 }
-.text-input.--error {
+.text-input.\--error {
   border-color: #d0021b;
 }
-.text-input.--disabled, .text-input:disabled {
+.text-input.\--disabled, .text-input:disabled {
   opacity: .3;
   pointer-events: none;
 }
+
+/*# sourceMappingURL=home.map*/
