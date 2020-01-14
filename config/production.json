@@ -1,6 +1,6 @@
 {
     "app": {
-      "cluster": true
+      "cluster": false
     }
     
   }

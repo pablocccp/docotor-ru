@@ -59,7 +59,7 @@ app.use(appRouter);
 // ============================================================
 // Application StartUp via Cluster Service and app.cluster config
 cluster(() => {
-  app.listen(appHttpPort, () => {
+  app.listen(appHttpPort, '0.0.0.0', () => {
     console.log(`Base URL is: ${process.env.baseUrl}`)
     console.log(`Application Port: ${appHttpPort} | Environment: ${process.env.NODE_ENV}`); // eslint-disable-line
     console.log('--------------------------------------------------'); // eslint-disable-line

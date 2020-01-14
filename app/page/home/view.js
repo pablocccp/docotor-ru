@@ -2,7 +2,10 @@ import React, { Component } from "react";
 import { hydrate } from "react-dom"
 
 import Layout from '../../components/layout';
+import SearchBox from '../../components/search-box';
+
 import './style.css';
+import './chunks.css';
 
 class Home extends Component {
   constructor(props) {
@@ -13,6 +16,9 @@ class Home extends Component {
     
     return (
       <Layout layoutData={this.props.layout} >
+        <section class="main">
+          <SearchBox />
+        </section>  
          
       </Layout>
     );

@@ -1,11 +1,11 @@
 {
   "app": {
     "name": "Proyect Name",
-    "cluster": true,
+    "cluster": false,
     "baseUrl": {
-      "default": ""
+      "default": "localhost"
     },
-    "port": 8082,
+    "port": 8081,
     "portS": 8443,
     "lang": [
       "es",
@@ -13,8 +13,8 @@
     ]
   },
   "webpack": {
-    "minimize-css": true,
-    "uglify-js": true,
+    "minimize-css": false,
+    "uglify-js": false,
     "public-path": "./public/",
     "entryPoint": "./client/index.js",
     "layout": {
@@ -22,8 +22,8 @@
       "template": "./client/index.html"
     },
     "bundles": {
-      "js": "bundle.[name].[hash].js",
-      "css": "bundle.[name].[hash].css"
+      "js": "bundle.[name].js",
+      "css": "bundle.[name].css"
     }
   },
   "map": { 
