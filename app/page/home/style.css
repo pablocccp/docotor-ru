@@ -4242,7 +4242,7 @@ html.js .header_show {
     width: 300px;
     margin: 0 auto;
     padding: 25px 0 20px 300px;
-    background: url(/static/compile/heart.png) no-repeat 0 0;
+    background: url(https://docdoc.ru/static/compile/heart.png) no-repeat 0 0;
     background-size: auto 100%;
     font-size: 1.4375rem;
     line-height: 2.3125rem;

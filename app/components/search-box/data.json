@@ -1,0 +1,11 @@
+{
+  "title1": "Найдите проверенного врача",
+  "title2": "и запишитесь на приём",
+  "actionform": "//docdoc.ru/site/searchRedirect",
+  "submit": "Найти",
+  "recommendedTodayTitle": "Ещё на DocDoc можно",
+  "doctorApplicationName": "Записаться",
+  "doctorApplicationLable": "к врачу на приём",
+  "doctorApplicationLink": "/doctor"
+
+}

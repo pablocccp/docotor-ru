@@ -3,6 +3,9 @@ import { hydrate } from "react-dom"
 
 import Layout from '../../components/layout';
 import SearchBox from '../../components/search-box';
+import Benefits from '../../components/benefits';
+import Counters from '../../components/counters';
+import Apps from '../../components/apps';
 
 import './style.css';
 import './chunks.css';
@@ -18,6 +21,9 @@ class Home extends Component {
       <Layout layoutData={this.props.layout} >
         <section class="main">
           <SearchBox />
+          <Benefits />
+          <Counters />
+          <Apps />
         </section>  
          
       </Layout>

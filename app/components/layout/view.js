@@ -6,7 +6,7 @@ import Header from './header.js';
 import './style.css';
 
 const Layout = (props) => (
-  <div className="layout_page">
+  <div className="outer">
     {props.withHeader && <Header  subTitle={props.subTitle} data={props.layoutData}/> }
     <React.Fragment>
       {props.children}
