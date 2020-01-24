@@ -1,14 +1,14 @@
 {
   "img": "https://docdoc.ru/static/new-doc-doc/images/main/apps.png",
-  "title1": "Проверенные врачи",
-  "title2": "у вас в телефоне",
-  "li1": "Легко найти врача неподалёку от вас",
-  "li2": "Удобное приложение, ",
-  "li3": "всегда под рукой",
-  "li4": "Записывайтесь к врачу ",
-  "li5": "в одно касание",
-  "smsBlockLabel": "Отправить вам ссылку?",
-  "smsBlockButton": "Получить",
+  "title1": "Profesionales verificados",
+  "title2": "en su telefono",
+  "li1": "Cerca tuyo",
+  "li2": "app intuitiva, ",
+  "li3": "siempre bajo la mano",
+  "li4": "Pida turno ",
+  "li5": "en un click",
+  "smsBlockLabel": "Te enviamos el link?",
+  "smsBlockButton": "Recibir",
   "link1": "https://itunes.apple.com/us/app/id1198631120?utm_content=docdocmain",
   "link2": "https://play.google.com/store/apps/details?id=com.docdoc.docdoc&amp;utm_content=docdocmain"
 
